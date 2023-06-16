@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Editar</title>
+    <link rel="stylesheet" href="./css/styleeditar.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+<body>
+    <header class="header">
+        <div class="contenedor">
+            
+            <div class="logo">
+                <button class="btn-home"><a href="./listarcolegios.html">Inicio</button></a>
+            </div>
+            <nav class="menu">
+                <a href="#"></a>
+            </nav>
+        </div>
+    </header>
+    <div class="container">
+        <form  class="form">
+            <div class="form-header">
+                <h1 class="form-title">EDITAR<span></span></h1>
+            </div>
+
+            <input type="hidden" id="_id">
+
+            <label for="direccion" class="form-label">Dirección</label>
+                <input type="text" class="form-input" id="direccion">
+
+            <label for="latitud" class="form-label">Latitud</label>
+                <input type="text" class="form-input" id="latitud">
+
+            <label for="longitud" class="form-label">Longitud</label>
+                <input type="text" class="form-input" id="longitud" >   
+                
+            <label for="fechaReporte" class="form-label">Fecha del Reporte</label>
+                <input type="date" class="form-input" id="fechaReporte" readonly> 
+
+            <label for="descripcion" class="form-label">Descripción</label>
+                <input type="text" class="form-input" id="descripcion"> 
+                
+            <button id="btn-actualizarCole" type="button" class="btn-submit">Actualizar</button>    
+            
+        </form>
+    </div>
+    
+    <script src="./js/funciones.js"></script>
+</body>
+</html>
